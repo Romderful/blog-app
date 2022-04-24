@@ -2,10 +2,8 @@
 
 This project has been built with :
 
-
     - Django rest framework for the backend
     - Nuxtjs for the frontend
-
 
 📝 Content creation
 - As a creator, I have access to a button that allows me to create an article.
@@ -21,13 +19,32 @@ This project has been built with :
 
 ## Install
 
-- backend : we use pipenv, install the dependencies. Also make the migrations.
-- frontend : we use yarn, install the dependencies.
+- backend :
+
+    Set your location in the back folder with the following command :
+    - cd back
+
+    To install the dependencies :
+    - pipenv install
+
+    To make the database migrations :
+    - ./manage.py migrate
+
+    To create the superuser :
+    - ./manage.py createsuperuser
+
+- frontend :
+
+    Set your location in the front folder with the following command :
+    - cd front
+
+    To install the dependencies :
+    - yarn install
 
 ## Usage
 
-- `(cd front; yarn run -o)` run the frontend server.
-- `(cd back; poetry run python manage.py runserver)` run the backend server.
+- `(cd front && yarn dev)` run the frontend server.
+- `(cd back && ./manage.py runserver)` run the backend server.
 
 ## License
 
